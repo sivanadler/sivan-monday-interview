@@ -19,7 +19,6 @@ This application allows users to create orders for fragrances with custom inscri
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Meeting Proposal Requirements](#meeting-proposal-requirements)
- - [How I Met the Requirements](#how-i-met-the-requirements)
 
 ## Introduction
 
