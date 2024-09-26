@@ -82,7 +82,6 @@ To run this code locally, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/yourusername/fragrance-order-app.git
-cd fragrance-order-app
 
 npm install
 ```
