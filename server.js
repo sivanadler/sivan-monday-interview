@@ -109,14 +109,14 @@ app.post('/api/addOrder', async (req, res) => {
     const tagIds = await Promise.all(fragrances.map(fragrance => createOrGetTag(fragrance.value)));
     
     const tagValues = JSON.stringify({
-      tags4: { tag_ids: tagIds }
+      tags88__1: { tag_ids: tagIds }
     });
 
     // Construct the column values
     const columnValues = JSON.stringify({
-      status: { label: "Received" },
-      tags4__1: { tag_ids: tagIds },
-      text__1: customInscription
+      status6__1: { label: "Received" },
+      tags88__1: { tag_ids: tagIds },
+      text3__1: customInscription
     });
     
     // Create the item with the tag IDs

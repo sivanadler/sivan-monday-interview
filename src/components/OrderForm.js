@@ -43,6 +43,8 @@ const OrderForm = ({ fragrances, onOrderCreated }) => {
             setLastName('');
             setQuantity(0);
             setSelectedFragrances([]);
+            setCustomInscription('')
+            setCustomInscriptionWanted(false)
         } catch (error) {
             console.error('Error adding order:', error);
             setErrorMessage('Failed to create order. Please try again.');
@@ -129,6 +131,7 @@ const OrderForm = ({ fragrances, onOrderCreated }) => {
                 <Flex direction={Flex.directions.COLUMN} style={{ width: '100%' }}>
                 <Checkbox
                     value={customInscriptionWanted}
+                    checked={customInscriptionWanted}
                     onChange={handleChangeCustomInscriptionWanter}
                     label="Would you like to add a custom inscription?"
                 />
