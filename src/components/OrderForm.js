@@ -68,6 +68,10 @@ const OrderForm = ({ fragrances, onOrderCreated }) => {
         else disabled = false;
     }
 
+    const firstNameLabel = <span>First Name <span style={{color: 'red'}}>*</span></span>
+    const lastNameLabel = <span>Last Name <span style={{color: 'red'}}>*</span></span>
+    const quantityLabel = <span>Quantity <span style={{color: 'red'}}>*</span></span>
+
     return (
         <div>
             {showSuccess && 
@@ -96,15 +100,14 @@ const OrderForm = ({ fragrances, onOrderCreated }) => {
                 <Flex direction={Flex.directions.ROW} gap={Flex.gaps.LARGE} style={{ width: '50vw', margin: '2%' }}>
                     <TextField 
                         placeholder="First Name" 
-                        title="First Name" 
+                        title={firstNameLabel}
                         value={firstName}
                         onChange={(e) => setFirstName(e)}
                         style={{ flex: 1 }}
-                        required
                     />
                     <TextField 
                         placeholder="Last Name" 
-                        title="Last Name" 
+                        title={lastNameLabel} 
                         value={lastName}
                         onChange={(e) => setLastName(e)}
                         style={{ flex: 1 }}
@@ -112,7 +115,7 @@ const OrderForm = ({ fragrances, onOrderCreated }) => {
                     />
                     <TextField 
                         placeholder="Quantity" 
-                        title="Quantity"
+                        title={quantityLabel}
                         type={TextField.types.NUMBER}
                         value={quantity}
                         onChange={(e) => setQuantity(e)}
